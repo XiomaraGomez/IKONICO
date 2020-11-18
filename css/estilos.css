@@ -23,6 +23,47 @@ body {
     margin-bottom: 60px;
 }
 
+.hamburguer{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    width: 30vw;
+    height: 100%;
+    /* background-image: linear-gradient(to top, #8411dd 0%, #16aaf8 100%); */
+    /* 02 */
+    background-image: linear-gradient(to top, #8411dd 0%, #16aaf8 100%);
+    /* 028 */
+    background-image: linear-gradient(135deg, #8411dd 0%, #16aaf8 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    right: 0;
+    transform: translateX(110%);
+    transition:transform 0.3s ease-in-out;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+
+.spread{
+    transform: translateX(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
 /* Header */
 
 header {
@@ -253,7 +294,7 @@ background: linear-gradient(0deg, rgba(19,174,249,1) 0%, rgba(137,10,220,1) 100%
 /* footer */
 
 footer{
-    background: rgb(95,59,223);
+    background: background: rgb(95,59,223);
 background: linear-gradient(to right, rgba(95,59,223,1) 0%, rgba(115,20,215,1) 100%);  
     padding: 60px 0 30px 0;
     margin: auto;
@@ -296,6 +337,9 @@ background: linear-gradient(to right, rgba(95,59,223,1) 0%, rgba(115,20,215,1) 1
         background-position: center;
     }
 
+    .menu-navegacion{
+        width: 50vw;
+    }
     .contenedor-sobre-nosotros{
         flex-direction: column;
         justify-content: center;
@@ -363,6 +407,14 @@ background: linear-gradient(to right, rgba(95,59,223,1) 0%, rgba(115,20,215,1) 1
         margin-right: 5px;
     }
 
+    .menu-navegacion{
+        width: 65vw;
+    }
+
+    .hamburguer{
+        top: 20px;
+        right: 20px;
+    }
     .textos-header h1{
         font-size: 35px;
     }

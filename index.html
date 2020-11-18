@@ -14,15 +14,16 @@
 
 <body>
     <header class="header">
-        <nav class="menu-navegacion"> 
-                <a href="#uno">Inicio</a>
-                <a href="#dos">Nosotros</a>
-                <a href="#tres">Portafolio</a>
-                <a href="#cuatro">Servicios</a>
-                <a href="#cinco">Contacto</a>
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#portafolio">Portafolio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#footer">Contacto</a>
             </div>
         </nav>
-        <section class="textos-header">
+        <section class="textos-header" id="inicio">
             <h1>Amamos las nuevas ideas</h1>
             <h2>Somos una empresa innovadora lista para emprender nuevas ideas. </h2>
         </section>
@@ -34,7 +35,7 @@
     </header>
 
     <main>
-        <section class="contenedor sobre-nosotros">
+        <section class="contenedor sobre-nosotros" id="nosotros">
             <h2 class="titulo">¿Por qué elegirnos?</h2>
             <div class="contenedor-sobre-nosotros">
                 <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
@@ -47,7 +48,7 @@
                 </div>
             </div>
         </section>
-        <section class="portafolio">
+        <section class="portafolio" id="portafolio">
             <div class="contenedor">
                 <h2 class="titulo">Lo que hacemos</h2>
                 <div class="galeria-port">
@@ -110,7 +111,7 @@
                 </div>
             </div>
         </section>
-        <section class="clientes contenedor">
+        <section class="clientes contenedor" id="testimonios">
             <h2 class="titulo">Testimonios</h2>
             <div class="cards">
                 <div class="card">
@@ -129,7 +130,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-services">
+        <section class="about-services" id="servicios">
             <div class="contenedor">
                 <h2 class="titulo">Nuestros servicios</h2>
                 <div class="servicio-cont">
@@ -153,7 +154,7 @@
         </section>
     </main>
     <footer>
-        <div class="contenedor-footer">
+        <div class="contenedor-footer" id="footer">
             <div class="content-foo">
                 <h4>Instagram</h4>
                 <p>@Ikonico_agencia</p>
@@ -170,6 +171,7 @@
         </div>
         <h2 class="titulo-final"> IKONICO | Agencia de publicidad</h2>
     </footer>
+<script src="js/menu.js"></script>
 </body>
 
 </html> 
